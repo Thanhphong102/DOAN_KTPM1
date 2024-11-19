@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1c1fea0d948c43819cae6ed51974964a" Name="Diagram1">
+        <EntityTypeShape EntityType="WebP2HModel.CHITIETHINHANH" Width="1.5" PointX="2" PointY="6" />
+        <EntityTypeShape EntityType="WebP2HModel.CHITIETHOADON" Width="1.5" PointX="6.5" PointY="2.625" />
+        <EntityTypeShape EntityType="WebP2HModel.DANHMUC" Width="1.5" PointX="2" PointY="8.375" />
+        <EntityTypeShape EntityType="WebP2HModel.DIACHICHITIET" Width="1.5" PointX="2.75" PointY="20.125" />
+        <EntityTypeShape EntityType="WebP2HModel.DONHANG" Width="1.5" PointX="4.25" PointY="15.125" />
+        <EntityTypeShape EntityType="WebP2HModel.DUNGTICH" Width="1.5" PointX="2" PointY="2.875" />
+        <EntityTypeShape EntityType="WebP2HModel.GIOHANG" Width="1.5" PointX="6.5" PointY="5.75" />
+        <EntityTypeShape EntityType="WebP2HModel.HINHTHUCTHANHTOAN" Width="1.5" PointX="2" PointY="13.875" />
+        <EntityTypeShape EntityType="WebP2HModel.KHACHHANG" Width="1.5" PointX="2" PointY="16.625" />
+        <EntityTypeShape EntityType="WebP2HModel.SANPHAM" Width="1.5" PointX="4.25" PointY="0.875" />
+        <EntityTypeShape EntityType="WebP2HModel.TAIKHOAN" Width="1.5" PointX="9" PointY="0.5" />
+        <EntityTypeShape EntityType="WebP2HModel.THUONGHIEU" Width="1.5" PointX="2" PointY="10.875" />
+        <AssociationConnector Association="WebP2HModel.FK__SANPHAM__HA__4F7CD00D" />
+        <AssociationConnector Association="WebP2HModel.FK__CHITIETHOA__MaDH__52593CB8" />
+        <AssociationConnector Association="WebP2HModel.FK__CHITIETHOA__MaSP__534D60F1" />
+        <AssociationConnector Association="WebP2HModel.FK__SANPHAM__MaDM__4D94879B" />
+        <AssociationConnector Association="WebP2HModel.FK__KHACHHANG__MaDC__4222D4EF" />
+        <AssociationConnector Association="WebP2HModel.FK__DONHANG__MaHTTT__44FF419A" />
+        <AssociationConnector Association="WebP2HModel.FK__DONHANG__MaKH__45F365D3" />
+        <AssociationConnector Association="WebP2HModel.FK__SANPHAM__MaDT__4E88ABD4" />
+        <AssociationConnector Association="WebP2HModel.FK__GIOHANG__MaSP__5629CD9C" />
+        <AssociationConnector Association="WebP2HModel.FK__SANPHAM__MaTH__4CA06362" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

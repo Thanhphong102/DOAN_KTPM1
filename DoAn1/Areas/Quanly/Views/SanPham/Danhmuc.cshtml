@@ -1,0 +1,65 @@
+﻿@model IEnumerable<DoAn1.Areas.Quanly.Data.SANPHAM>
+
+@{
+    ViewBag.Title = "Danh mục";
+    Layout = "~/Areas/Quanly/Views/Shared/_Layout.cshtml";
+}
+
+<div class="header">
+    <h1>Quản lý Danh mục</h1>
+    <button class="add-new-btn">
+        @Html.ActionLink("+ Thêm danh mục mới", "ThemDM", "SanPham")</a>
+    </button>
+</div>
+
+<div class="search-bar">
+    <input type="text" class="search-input" placeholder="Tìm kiếm danh mục...">
+    <button class="search-btn">Tìm kiếm</button>
+</div>
+
+<div class="categories-grid" id="categoriesGrid"> </div>
+<tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.HA)</td>
+            <td>@Html.DisplayFor(modelItem => item.DANHMUC.MaDM)</td>
+            <td>@Html.DisplayFor(modelItem => item.DANHMUC.MotaDM)</td>
+            <td>@Html.DisplayFor(modelItem => item.SoluongSP)</td>
+            <td>@Html.DisplayFor(modelItem => item.SoluongtonSP)</td>
+            <a href="https://example.com" class="btn btn-view">Xem</a>
+            <button class="btn btn-edit">Sửa</button>
+            <button class="btn btn-delete">Xóa</button>
+        </tr>
+    }
+
+</tbody>
+<script>
+
+    function renderCategories() {
+        const grid = document.getElementById('categoriesGrid');
+        grid.innerHTML = '';
+
+        categories.forEach(category => {
+            const card = document.createElement('div');
+            card.className = 'category-card';
+            card.innerHTML = `
+                    <div class="anh">
+                        <img src="${category.imageUrl}" >
+                    </div>
+                    <div class="category-header">
+                        <h3 class="category-title">${category.TenDM}</h3>
+                        <div class="category-actions">
+                            <button class="btn btn-edit">Sửa</button>
+                            <button class="btn btn-delete">Xóa</button>
+                        </div>
+                    </div>
+                    <p>${category.MotaDM}</p>
+                `;
+            grid.appendChild(card);
+        });
+    }
+    // Initialize the page
+    renderCategories();
+</script>
+

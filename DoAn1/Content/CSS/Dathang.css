@@ -1,0 +1,139 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.boxcenter {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.thongtinnhanhang {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .thongtinnhanhang td {
+        padding: 10px;
+        vertical-align: middle;
+        font-size: 16px;
+    }
+
+        .thongtinnhanhang td:first-child {
+            font-weight: bold;
+            color: #555;
+        }
+
+    .thongtinnhanhang input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+.boxtitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.boxcontent {
+    display: flex;
+    align-items: center;
+}
+
+    .boxcontent img {
+        width: 60px;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    .boxcontent a {
+        color: #007bff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        .boxcontent a:hover {
+            text-decoration: underline;
+        }
+
+.money {
+    margin-top: 20px;
+}
+
+    .money h {
+        display: block;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .money a {
+        display: block;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    .money button {
+        width: 100%;
+        padding: 12px;
+        background-color: #222048;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .money button:hover {
+            background-color: #4f4084;
+        }
+/**/
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .product-item img {
+        width: 60px;
+        height: auto;
+        margin-right: 15px;
+    }
+
+.product-details {
+    flex-grow: 1;
+}
+
+.quantity-input {
+    width: 60px;
+    margin-left: 10px;
+}

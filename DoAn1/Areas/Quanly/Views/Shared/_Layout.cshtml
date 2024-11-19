@@ -1,0 +1,63 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @ViewBag.Title</title>
+    @Styles.Render("~/Content/CSS/Danhmuc.css")
+    @Styles.Render("~/Content/CSS/Donhang.css")
+    @Styles.Render("~/Content/CSS/ChitietSP.css")
+    @Styles.Render("~/Content/CSS/Sanpham.css")
+    @Styles.Render("~/Content/CSS/Khachhang.css")
+    @Styles.Render("~/Content/CSS/Layoutql.css")
+    @Styles.Render("~/Content/CSS/Themsp.css")
+    @Styles.Render("~/Content/CSS/Danhgia.css")
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="brand">P2H</div>
+            <ul class="nav-menu">
+                <li>
+                    <div class="nav-item">
+                        @Html.ActionLink("Danh mục","Danhmuc", "SanPham")
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        @Html.ActionLink("Sản Phẩm","SanPham", "SanPham")
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        @Html.ActionLink("Đơn Hàng","Donhang", "SanPham")
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        @Html.ActionLink("Khách Hàng","Khachhang", "SanPham")
+                    </div>
+                </li>
+                @*<li>
+                    <div class="nav-item">
+                        <a href="/Quanly/Khuyenmai/Khuyenmai.html">Khuyến mãi</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-item">
+                        <a href="/Quanly/Danhgia/Danhgia.html">Đánh giá</a>
+                    </div>
+                </li>*@
+            </ul>
+        </div>
+        <div class="main-container">
+            @RenderBody()
+        </div>
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>

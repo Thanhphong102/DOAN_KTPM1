@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WebP2HModelStoreContainer" CdmEntityContainer="WebP2HEntities">
+    <EntitySetMapping Name="CHITIETHINHANHs">
+      <EntityTypeMapping TypeName="WebP2HModel.CHITIETHINHANH">
+        <MappingFragment StoreEntitySet="CHITIETHINHANH">
+          <ScalarProperty Name="HA" ColumnName="HA" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHITIETHOADONs">
+      <EntityTypeMapping TypeName="WebP2HModel.CHITIETHOADON">
+        <MappingFragment StoreEntitySet="CHITIETHOADON">
+          <ScalarProperty Name="ThanhtienSP" ColumnName="ThanhtienSP" />
+          <ScalarProperty Name="Soluongban" ColumnName="Soluongban" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+          <ScalarProperty Name="MaDH" ColumnName="MaDH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DANHMUCs">
+      <EntityTypeMapping TypeName="WebP2HModel.DANHMUC">
+        <MappingFragment StoreEntitySet="DANHMUC">
+          <ScalarProperty Name="MotaDM" ColumnName="MotaDM" />
+          <ScalarProperty Name="TenDM" ColumnName="TenDM" />
+          <ScalarProperty Name="MaDM" ColumnName="MaDM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DIACHICHITIETs">
+      <EntityTypeMapping TypeName="WebP2HModel.DIACHICHITIET">
+        <MappingFragment StoreEntitySet="DIACHICHITIET">
+          <ScalarProperty Name="Hotennguoinhan" ColumnName="Hotennguoinhan" />
+          <ScalarProperty Name="Huyen" ColumnName="Huyen" />
+          <ScalarProperty Name="Quan" ColumnName="Quan" />
+          <ScalarProperty Name="Thanhpho" ColumnName="Thanhpho" />
+          <ScalarProperty Name="Tinh" ColumnName="Tinh" />
+          <ScalarProperty Name="Xa" ColumnName="Xa" />
+          <ScalarProperty Name="Tenphuong" ColumnName="Tenphuong" />
+          <ScalarProperty Name="Sonha" ColumnName="Sonha" />
+          <ScalarProperty Name="Tenduong" ColumnName="Tenduong" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="MaDC" ColumnName="MaDC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DONHANGs">
+      <EntityTypeMapping TypeName="WebP2HModel.DONHANG">
+        <MappingFragment StoreEntitySet="DONHANG">
+          <ScalarProperty Name="Trangthai" ColumnName="Trangthai" />
+          <ScalarProperty Name="Tongthanhtoan" ColumnName="Tongthanhtoan" />
+          <ScalarProperty Name="NgaytaoHD" ColumnName="NgaytaoHD" />
+          <ScalarProperty Name="TGDathang" ColumnName="TGDathang" />
+          <ScalarProperty Name="TongluongSP" ColumnName="TongluongSP" />
+          <ScalarProperty Name="MaHTTT" ColumnName="MaHTTT" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+          <ScalarProperty Name="MaDH" ColumnName="MaDH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DUNGTICHes">
+      <EntityTypeMapping TypeName="WebP2HModel.DUNGTICH">
+        <MappingFragment StoreEntitySet="DUNGTICH">
+          <ScalarProperty Name="Donvidoluong" ColumnName="Donvidoluong" />
+          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GIOHANGs">
+      <EntityTypeMapping TypeName="WebP2HModel.GIOHANG">
+        <MappingFragment StoreEntitySet="GIOHANG">
+          <ScalarProperty Name="SoluongSP" ColumnName="SoluongSP" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HINHTHUCTHANHTOANs">
+      <EntityTypeMapping TypeName="WebP2HModel.HINHTHUCTHANHTOAN">
+        <MappingFragment StoreEntitySet="HINHTHUCTHANHTOAN">
+          <ScalarProperty Name="TenHTTT" ColumnName="TenHTTT" />
+          <ScalarProperty Name="MaHTTT" ColumnName="MaHTTT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACHHANGs">
+      <EntityTypeMapping TypeName="WebP2HModel.KHACHHANG">
+        <MappingFragment StoreEntitySet="KHACHHANG">
+          <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="MaDC" ColumnName="MaDC" />
+          <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SANPHAMs">
+      <EntityTypeMapping TypeName="WebP2HModel.SANPHAM">
+        <MappingFragment StoreEntitySet="SANPHAM">
+          <ScalarProperty Name="HA" ColumnName="HA" />
+          <ScalarProperty Name="Huongdansudung" ColumnName="Huongdansudung" />
+          <ScalarProperty Name="ThanhphanSP" ColumnName="ThanhphanSP" />
+          <ScalarProperty Name="Baoquan" ColumnName="Baoquan" />
+          <ScalarProperty Name="Hieuquasudung" ColumnName="Hieuquasudung" />
+          <ScalarProperty Name="Uuthenoibac" ColumnName="Uuthenoibac" />
+          <ScalarProperty Name="Vandeveda" ColumnName="Vandeveda" />
+          <ScalarProperty Name="ThongtinSP" ColumnName="ThongtinSP" />
+          <ScalarProperty Name="MaDT" ColumnName="MaDT" />
+          <ScalarProperty Name="TrangthaiSP" ColumnName="TrangthaiSP" />
+          <ScalarProperty Name="SoluongtonSP" ColumnName="SoluongtonSP" />
+          <ScalarProperty Name="SoluongSP" ColumnName="SoluongSP" />
+          <ScalarProperty Name="MaDM" ColumnName="MaDM" />
+          <ScalarProperty Name="MaTH" ColumnName="MaTH" />
+          <ScalarProperty Name="GiaSP" ColumnName="GiaSP" />
+          <ScalarProperty Name="MotaSP" ColumnName="MotaSP" />
+          <ScalarProperty Name="TenSP" ColumnName="TenSP" />
+          <ScalarProperty Name="MaSP" ColumnName="MaSP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TAIKHOANs">
+      <EntityTypeMapping TypeName="WebP2HModel.TAIKHOAN">
+        <MappingFragment StoreEntitySet="TAIKHOAN">
+          <ScalarProperty Name="XacnhanMK" ColumnName="XacnhanMK" />
+          <ScalarProperty Name="TrangthaiTK" ColumnName="TrangthaiTK" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="Ngaysinh" ColumnName="Ngaysinh" />
+          <ScalarProperty Name="Matkhau" ColumnName="Matkhau" />
+          <ScalarProperty Name="QuyenTK" ColumnName="QuyenTK" />
+          <ScalarProperty Name="TenTK" ColumnName="TenTK" />
+          <ScalarProperty Name="MaTK" ColumnName="MaTK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="THUONGHIEUx">
+      <EntityTypeMapping TypeName="WebP2HModel.THUONGHIEU">
+        <MappingFragment StoreEntitySet="THUONGHIEU">
+          <ScalarProperty Name="XuatxuTH" ColumnName="XuatxuTH" />
+          <ScalarProperty Name="TenTH" ColumnName="TenTH" />
+          <ScalarProperty Name="MaTH" ColumnName="MaTH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

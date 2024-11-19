@@ -1,0 +1,314 @@
+﻿
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.boxcenter {
+    width: 80%;
+    margin: 0 auto;
+    font-size: medium;
+}
+
+#home :hover {
+    border-radius: 20px;
+    background-color: #222048;
+}
+
+.row {
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.boxtrai_mr {
+    border-radius: 10px;
+}
+
+
+.giohang {
+    position: fixed;
+    border-radius: 10px;
+    right: 20px;
+    top: 20px;
+    height: 60px;
+    background-color: #222048;
+    padding: 10px;
+}
+
+    .giohang img {
+        width: 40px;
+        float: left;
+        margin-right: 5px;
+    }
+
+    .giohang span {
+        font-weight: bold;
+        font-size: 2vw;
+        color: #222048;
+        line-height: 40px;
+    }
+
+.footer {
+    background-color: #222048;
+    border: 1px #222048;
+    color: #FFF;
+    font-size: 0.8vw;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.header h1 {
+    margin: 20px;
+    font-size: 1.2vw;
+    color: #FFF;
+}
+
+h1 {
+    margin: 20px 0px;
+    font-size: 1.2vw;
+    color: black;
+}
+
+
+.boxtrai {
+    float: left;
+    width: 74%;
+}
+
+.boxphai {
+    float: left;
+    width: 24%;
+}
+
+.boxtitle {
+    color: #222048;
+    padding: 10px;
+    background-color: #222048;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border: 1px #CCC solid;
+}
+
+.boxcontent {
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.boxcontent2 {
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    background-color: #222048;
+}
+
+.boxfooter {
+    padding: 10px;
+    background-color: #222048;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px #CCC solid;
+    border-right: 1px #CCC solid;
+    border-bottom: 1px #CCC solid;
+}
+
+.banner {
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+    .banner img {
+        height: 300px;
+    }
+
+.boxsp {
+    float: left;
+    width: calc(32% - 10px);
+    min-height: 300px;
+    border: 1px #222048 solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 5px;
+}
+
+    .boxsp input {
+        width: 40px;
+        position: absolute;
+        right: 5px;
+        bottom: 40px;
+        border-radius: 5px;
+        border: 1px #222048;
+    }
+
+    .boxsp button {
+        width: 80px;
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+        background-color: #222048;
+        border-radius: 5px;
+        border: 1px#222048;
+        padding: 5px 0px;
+        color: white;
+        
+    }
+
+    .boxsp .img {
+        min-height: 230px;
+        text-align: center;
+    }
+
+.img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #222048;
+    color: white;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px #CCC solid;
+    text-align: center;
+}
+
+    td div {
+        width: calc(100% - 20px);
+        padding: 0px 10px;
+        text-align: right;
+    }
+
+    th div {
+        width: calc(100% - 10px);
+        padding: 0px 5px;
+        text-align: right;
+        font-size: 1.5rem;
+    }
+
+    td img {
+        width: 100px;
+    }
+
+#tongdonhang {
+    margin-right: 500px;
+}
+/* menu dọc*/
+
+.menudoc ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+    .menudoc ul li {
+        padding: 10px 20px;
+        background-color: #222048;
+        border-bottom: 1px #CCC solid;
+    }
+
+        .menudoc ul li a {
+            color: #222048;
+            text-decoration: none;
+        }
+
+        .menudoc ul li:hover {
+            background-color: #222048;
+        }
+
+.searbox input[type="text"] {
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #FFF;
+    border: 1px #CCC solid;
+    border-radius: 5px;
+}
+
+.top10 img {
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px #CCC solid;
+}
+
+.top10 a {
+    color: #222048;
+    text-decoration: none;
+}
+
+    .top10 a:hover {
+        color: #000;
+        text-decoration: underline;
+    }
+
+
+.dongy {
+    width: 150px;
+    border: 1px #222048;
+    background-color: #222048;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-left: 750px;
+
+}
+
+    .dongy:hover {
+        border: 1px #222048;
+        background-color: white;
+        color: #222048;
+        border-bottom: 1px solid #222048;
+    }
+/* nút tăng chỉnh số lượng*/
+.quantity-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quantity-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin: 0 2px;
+}

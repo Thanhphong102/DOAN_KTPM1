@@ -1,0 +1,85 @@
+﻿
+@model IEnumerable<DoAn1.Areas.Quanly.Data.SANPHAM>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+    Layout = "~/Areas/Quanly/Views/Shared/_Layout.cshtml";
+}
+   
+
+<div class="page-header">
+    <h1 class="page-title">Quản lý Sản phẩm</h1>
+    <button class="add-new-btn"> @Html.ActionLink(" + Thêm sản phẩm mới", "ThemSP", "SanPham")</button>
+</div>
+
+<div class="search-bar">
+    <input type="text" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+    <button class="search-btn">Tìm kiếm</button>
+</div>
+
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Mã SP</th>
+            <th>Tên sản phẩm</th>
+            <th>Danh mục</th>
+            <th>Giá</th>
+            <th>Tồn kho</th>
+            <th>Trạng thái</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.MaSP)</td>
+                <td>@Html.DisplayFor(modelItem => item.TenSP)</td>
+                <td>@Html.DisplayFor(modelItem => item.DANHMUC.TenDM)</td>
+                <td>@Html.DisplayFor(modelItem => item.GiaSP)đ</td>
+                <td>@Html.DisplayFor(modelItem => item.SoluongtonSP)</td>
+                <td>@Html.DisplayFor(modelItem => item.TrangthaiSP)</td>
+                <td>
+                    <button class="btn btn-view"><a href="~/QuanlySP/Home/Chitiet">Xem</a></button>
+                    <button class="btn btn-edit">Sửa</button>
+                    <button class="btn btn-delete">Xóa</button>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<script>
+    // Add active class to nav items
+    const navItems = document.querySelectorAll('.nav-item');
+    navItems.forEach(item => {
+        item.addEventListener('click', function () {
+            navItems.forEach(i => i.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Search functionality
+    const searchInput = document.querySelector('.search-input');
+    const searchBtn = document.querySelector('.search-btn');
+    const tableRows = document.querySelectorAll('.data-table tbody tr');
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', function (event) {
+        if (event.key === 'Enter') {
+            performSearch();
+        }
+    });
+
+    function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        tableRows.forEach(row => {
+            const text = row.textContent.toLowerCase();
+            row.style.display = text.includes(searchTerm) ? '' : 'none';
+        });
+    }
+</script>
+
+
+
